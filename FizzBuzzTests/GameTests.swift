@@ -20,4 +20,8 @@ class GameTests: XCTestCase {
         super.tearDown()
     }
     
+    func testGameStartsAtZero() {
+        XCTAssertTrue(game.score == 0)
+    }
+    
 }
